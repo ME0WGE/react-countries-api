@@ -27,11 +27,15 @@
 
 .country-flag-large {
   width: 100%;
+  max-height: 400px;
+  overflow: hidden;
 }
 
 .country-flag-large img {
   width: 100%;
   display: block;
+  object-fit: contain;
+  max-height: 400px;
 }
 
 .country-info h1 {
@@ -92,12 +96,6 @@
   text-align: center;
   margin-top: 3rem;
   font-size: 1.2rem;
-}
-
-/* Mode sombre */
-.dark-mode .back-button,
-.dark-mode .border-button {
-  background-color: hsl(209, 23%, 22%);
 }
 
 /* Responsive */
