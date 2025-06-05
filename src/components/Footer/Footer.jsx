@@ -15,6 +15,17 @@ export default function Footer() {
             </span>
             by
             <span className="wave-text">
+              <span>S</span>
+              <span>a</span>
+              <span>o</span>
+              <span>u</span>
+              <span>s</span>
+              <span>s</span>
+              <span>a</span>
+              <span>n</span>
+            </span>
+            &nbsp;&&nbsp;
+            <span className="wave-text">
               <span>K</span>
               <span>a</span>
               <span>m</span>
