@@ -10,10 +10,17 @@ export default function Filter({ selectedRegion, setSelectedRegion }) {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
   // Handle the region selection
   const handleRegionSelect = (region) => {
     setSelectedRegion(region);
     setIsOpen(false);
+  };
+
+  // Clear region filter
+  const clearRegionFilter = (e) => {
+    e.stopPropagation(); // Éviter le déclenchement du dropdown
+    setSelectedRegion("");
   };
 
   return (
@@ -22,6 +29,11 @@ export default function Filter({ selectedRegion, setSelectedRegion }) {
       <div className="filter-container">
         <div className="filter-dropdown" onClick={toggleDropdown}>
           <span>{selectedRegion || "Filter by Region"}</span>
+          {selectedRegion && (
+            <button className="clear-filter" onClick={clearRegionFilter}>
+              ×
+            </button>
+          )}
           {/* Arrow is Up or Down depending on the current state */}
           <i className={`arrow ${isOpen ? "up" : "down"}`}></i>
         </div>

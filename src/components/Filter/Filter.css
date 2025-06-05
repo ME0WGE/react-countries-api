@@ -61,3 +61,18 @@
     margin-top: 1rem;
   }
 }
+
+.clear-filter {
+  background: none;
+  border: none;
+  color: #858585;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  padding: 0;
+}
+
+.clear-filter:hover {
+  color: #555;
+}
