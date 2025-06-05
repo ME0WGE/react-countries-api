@@ -22,7 +22,16 @@ export default function Footer() {
               <span>s</span>
               <span>s</span>
               <span>a</span>
+              <span>n</span> <span>E</span>
+              <span>l</span> <span>K</span>
+              <span>a</span>
+              <span>i</span>
+              <span>s</span>
+              <span>o</span>
+              <span>u</span>
               <span>n</span>
+              <span>i</span>
+              {/* el kaisouni */}
             </span>
             &nbsp;&&nbsp;
             <span className="wave-text">
