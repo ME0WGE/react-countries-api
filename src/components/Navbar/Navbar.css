@@ -1,0 +1,22 @@
+.divNavGlo{
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 3px 8px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 80px;
+    box-sizing: border-box;
+}
+.divNavGlo > h2, p{
+    margin: 0;
+    padding: 0;
+}
+.divNavGlo > p{
+    font-size: 16pt;
+}
+.divNavGlo > h2{
+    font-size:  20pt;
+}
