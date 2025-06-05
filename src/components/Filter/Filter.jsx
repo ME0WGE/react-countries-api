@@ -4,7 +4,7 @@ import "./Filter.css";
 export default function Filter({ selectedRegion, setSelectedRegion }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const regions = ["Africa", "America", "Asia", "Europe", "Oceania"];
+  const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
 
   // Handle the dropdown menu toggle
   const toggleDropdown = () => {

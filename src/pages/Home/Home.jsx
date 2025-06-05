@@ -14,6 +14,7 @@ export default function Home({ countries }) {
 
     let result = [...countries];
 
+    // PS: Les deux filtres (Search & Dropdown) sont vérifiées simultanément. Cela empêche par ex. de trouver "Belgique" en la recherchant dans la searchbar quand la région ne correspond pas au pays, par ex. "Asie".
     // Filtrer par terme de recherche (si non vide)
     if (searchTerm.trim() !== "") {
       result = result.filter((country) =>
