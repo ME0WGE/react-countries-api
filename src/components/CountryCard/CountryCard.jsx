@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./CountryCard.css";
 
 export default function CountryCard({ countries = [] }) {
@@ -8,26 +9,31 @@ export default function CountryCard({ countries = [] }) {
   return (
     <div className="divCardGlo">
       {countries.map((country) => (
-        <div key={country.name.common} className="divCardOne">
-          <div className="cardImg">
-            <img src={country.flags.svg} alt={country.flags.alt} />
+        <Link
+          to={`/country/${country.name.common}`}
+          key={country.name.common}
+          className="card-link">
+          <div className="divCardOne">
+            <div className="cardImg">
+              <img src={country.flags.svg} alt={country.flags.alt} />
+            </div>
+            <div className="cardText">
+              <h4>{country.name.common}</h4>
+              <p>
+                <b>Population: </b>
+                {country.population.toLocaleString()}
+              </p>
+              <p>
+                <b>Région: </b>
+                {country.region}
+              </p>
+              <p>
+                <b>Capitale: </b>
+                {country.capital?.[0] || "N/A"}
+              </p>
+            </div>
           </div>
-          <div className="cardText">
-            <h4>{country.name.common}</h4>
-            <p>
-              <b>Population: </b>
-              {country.population}
-            </p>
-            <p>
-              <b>Région: </b>
-              {country.region}
-            </p>
-            <p>
-              <b>Capitale: </b>
-              {country.capital}
-            </p>
-          </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
