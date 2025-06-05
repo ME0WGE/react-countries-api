@@ -12,9 +12,6 @@
   text-rendering: optimizeLegibility;
 }
 
-:root {
-}
-
 #root {
   display: flex;
   flex-direction: column;
