@@ -11,7 +11,7 @@ function App() {
         {/* HOMEPAGE */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/country/" element={<CountryDetails />} />
+          <Route path="/country/:name" element={<CountryDetails />} />
         </Route>
       </Routes>
     </>
