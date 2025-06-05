@@ -7,6 +7,7 @@ import "./Home.css";
 export default function Home({ countries }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("");
+
   return (
     <>
       {/* SearchBar & Filter */}
