@@ -1,0 +1,44 @@
+.divCardGlo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding-top: 50px;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: sans-serif;
+}
+
+.divCardOne{
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 6px;
+    width: 350px;
+    height: 450px;
+}
+.cardImg{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.cardImg > img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+.cardText{
+    padding: 20px;
+}
+.cardText > p{
+    font-size: 15pt;
+    color: rgba(0, 0, 0, 0.767);
+}
+.cardText > h4{
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
