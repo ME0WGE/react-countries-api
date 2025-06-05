@@ -1,5 +1,5 @@
 import CountryCard from "../../components/CountryCard/CountryCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Filter from "../../components/Filter/Filter";
 import "./Home.css";
@@ -7,6 +7,27 @@ import "./Home.css";
 export default function Home({ countries }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("");
+  const [filteredCountries, setFilteredCountries] = useState([]);
+
+  useEffect(() => {
+    if (!countries) return;
+
+    let result = [...countries];
+
+    // Filtrer par terme de recherche (si non vide)
+    if (searchTerm.trim() !== "") {
+      result = result.filter((country) =>
+        country.name.common.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    // Filtrer par région sélectionnée (si non vide)
+    if (selectedRegion) {
+      result = result.filter((country) => country.region === selectedRegion);
+    }
+
+    setFilteredCountries(result);
+  }, [countries, searchTerm, selectedRegion]);
 
   return (
     <>
@@ -19,7 +40,7 @@ export default function Home({ countries }) {
         />
       </div>
       <div className="homeContainer">
-        <CountryCard countries={countries} />
+        <CountryCard countries={filteredCountries} />
       </div>
     </>
   );
