@@ -20,3 +20,39 @@
 .divNavGlo > h2{
     font-size:  20pt;
 }
+
+
+body.dark {
+  --background-color: #202c37;
+  --text-color: #fff;
+  --element-background: #2b3945;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.divNavGlo {
+  background-color: var(--element-background);
+  color: var(--text-color);
+}
+
+.dark-mode-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.card-text, 
+.card-title,
+.population,
+.region,
+.capital,
+p,
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color) !important;
+}
