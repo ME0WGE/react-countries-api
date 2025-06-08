@@ -1,4 +1,4 @@
-/* .divNavGlo{
+.divNavGlo{
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 3px 8px 0px;
     width: 100%;
@@ -19,7 +19,7 @@
 }
 .divNavGlo > h2{
     font-size:  20pt;
-} */
+}
 
 
 body.dark {
@@ -31,7 +31,7 @@ body.dark {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .divNavGlo {
