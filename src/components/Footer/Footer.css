@@ -17,6 +17,8 @@ footer {
 
 .copyright-span-1 {
   margin-left: 1rem;
+      color: var(--text-color) !important;
+
 }
 
 .socials-ul {
@@ -33,6 +35,8 @@ footer {
 .fa-Github {
   color: hsl(200, 15%, 8%);
   font-size: 1.5rem;
+  color: var(--text-color) !important;
+
 }
 
 .fa-Heart {
@@ -47,11 +51,14 @@ footer {
 .wave-text {
   display: inline-block;
   margin-left: 0.25rem;
+  color: var(--text-color) !important;
+
 }
 
 .wave-text > span {
   -webkit-text-stroke-width: 0.025rem;
   -webkit-text-stroke-color: rgba(255, 0, 0, 0.5);
+
 }
 
 .wave-text span {
