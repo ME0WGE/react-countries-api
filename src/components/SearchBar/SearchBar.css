@@ -21,6 +21,8 @@
   border-radius: 5px;
   font-size: 0.9rem;
   color: #111517;
+  background-color: var(--element-background);
+
 }
 
 .search-bar input:focus {
@@ -29,6 +31,8 @@
 
 .search-bar input::placeholder {
   color: #858585;
+    color: var(--text-color);
+
 }
 
 .search-button {
