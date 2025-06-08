@@ -22,6 +22,7 @@
   font-size: 0.9rem;
   color: #111517;
   background-color: var(--element-background);
+  color: var(--text-color);
 
 }
 
@@ -31,7 +32,7 @@
 
 .search-bar input::placeholder {
   color: #858585;
-    color: var(--text-color);
+  color: var(--text-color);
 
 }
 
