@@ -30,20 +30,21 @@ footer {
 }
 
 .fa-Heart,
-.fa-Linkedin,
 .fa-Github {
-  color: hsl(200, 15%, 8%) !important;
   font-size: 1.5rem;
-  color: var(--text-color) !important;
+}
+
+.fa-Github {
+  color: hsl(200, 15%, 8%);
+}
+
+body.dark .fa-Github {
+  color: white;
 }
 
 .fa-Heart {
   margin: 0.25rem;
-  color: red;
-}
-
-.fa-Linkedin {
-  margin-right: 0.5rem;
+  color: red !important;
 }
 
 .wave-text {

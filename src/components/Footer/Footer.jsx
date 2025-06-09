@@ -53,11 +53,8 @@ export default function Footer() {
         <ul className="socials-ul">
           <li className="socials-li">
             <a
-              href="https://www.linkedin.com/in/kamil-baldyga/"
+              href="https://github.com/ME0WGE/react-countries-api"
               target="_blank">
-              <FontAwesomeIcon icon={faLinkedin} className="fa-Linkedin" />
-            </a>
-            <a href="https://www.github.com/ME0WGE" target="_blank">
               <FontAwesomeIcon icon={faGithub} className="fa-Github" />
             </a>
           </li>
