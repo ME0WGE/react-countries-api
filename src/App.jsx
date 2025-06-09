@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://restcountries.com/v3.1/all")
+      .get("https://restcountries.com/v3.1/all?fields=name,capital,region,population,flags")
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
   }, []);
