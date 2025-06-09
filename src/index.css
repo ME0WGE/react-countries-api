@@ -35,3 +35,16 @@ html {
   /* Grey 950 (Light Mode Text) */
   color: hsl(200, 15%, 8%);
 }
+
+/* Ajustements de base pour la typographie responsive */
+@media (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 14px;
+  }
+}

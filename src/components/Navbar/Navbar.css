@@ -1,26 +1,26 @@
-.divNavGlo{
-    background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 3px 8px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 80px;
-    box-sizing: border-box;
+.divNavGlo {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 3px 8px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 80px;
+  box-sizing: border-box;
 }
-.divNavGlo > h2, p{
-    margin: 0;
-    padding: 0;
+.divNavGlo > h2,
+p {
+  margin: 0;
+  padding: 0;
 }
-.divNavGlo > p{
-    font-size: 16pt;
+.divNavGlo > p {
+  font-size: 16pt;
 }
-.divNavGlo > h2{
-    font-size:  20pt;
+.divNavGlo > h2 {
+  font-size: 20pt;
 }
-
 
 body.dark {
   --background-color: #202c37;
@@ -47,12 +47,49 @@ body {
   font-size: 1rem;
   padding: 0.5rem;
 }
-.card-text, 
+.card-text,
 .card-title,
 .population,
 .region,
 .capital,
 p,
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-color) !important;
+}
+
+@media (max-width: 768px) {
+  .divNavGlo {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+  }
+
+  .divNavGlo > h2 {
+    font-size: 18pt;
+  }
+
+  .dark-mode-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .divNavGlo {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 65px;
+  }
+
+  .divNavGlo > h2 {
+    font-size: 16pt;
+  }
+
+  .dark-mode-btn {
+    font-size: 0.8rem;
+  }
 }

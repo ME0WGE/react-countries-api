@@ -14,7 +14,6 @@
   cursor: pointer;
   font-size: 0.9rem;
   background-color: var(--element-background);
-
 }
 
 .dropdown-content {
@@ -59,8 +58,25 @@
 
 @media (max-width: 768px) {
   .filter-container {
-    width: 60%;
+    width: 100%;
+    max-width: 250px;
     margin-top: 1rem;
+  }
+
+  .filter-dropdown {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .dropdown-item {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-container {
+    max-width: 100%;
   }
 }
 

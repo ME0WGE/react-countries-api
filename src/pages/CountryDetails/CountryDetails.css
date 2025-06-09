@@ -25,7 +25,6 @@
   background-color: #ffffff;
 }
 
-
 .country-details-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,10 +100,9 @@
   background-color: var(--element-background);
   transition: all 0.3s ease-in-out;
 }
-.border-button:hover{
+.border-button:hover {
   color: #2b3945;
   background-color: #ffffff;
-
 }
 
 .loading,
@@ -114,22 +112,41 @@
   font-size: 1.2rem;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .country-details-content {
     gap: 4rem;
   }
+
+  .country-info h1 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .country-details-container {
+    padding: 2rem 0;
+  }
+
+  .back-button {
+    margin-bottom: 3rem;
+  }
+
   .country-details-content {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .info-columns {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .country-flag-large {
+    max-height: 300px;
+  }
+
+  .country-flag-large img {
+    max-height: 300px;
   }
 
   .border-countries {
@@ -139,5 +156,47 @@
 
   .border-buttons {
     margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .country-details-container {
+    width: 85%;
+    padding: 1.5rem 0;
+  }
+
+  .back-button {
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .country-flag-large {
+    max-height: 200px;
+  }
+
+  .country-flag-large img {
+    max-height: 200px;
+  }
+
+  .country-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-column-left p,
+  .info-column-right p {
+    font-size: 0.85rem;
+    margin: 0.6rem 0;
+  }
+
+  .border-title {
+    font-size: 0.85rem;
+  }
+
+  .border-button {
+    padding: 0.3rem 1rem;
+    font-size: 0.75rem;
   }
 }

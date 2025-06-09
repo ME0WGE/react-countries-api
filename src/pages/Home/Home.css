@@ -11,5 +11,13 @@
 @media (max-width: 768px) {
   .search-filter {
     flex-direction: column;
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-filter {
+    padding: 1rem 0;
+    width: 85%;
   }
 }
