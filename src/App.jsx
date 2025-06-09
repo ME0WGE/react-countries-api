@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "https://restcountries.com/v3.1/all?fields=name,capital,region,population,flags"
+        "https://restcountries.com/v3.1/all?fields=name,cca3,flags,population,region,subregion,capital,currencies,languages,borders"
       ) //https://restcountries.com/v3.1/all ne fonctionne plus pour fetch les informations donc l'URL a été modifiée dans la fonction get().
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
