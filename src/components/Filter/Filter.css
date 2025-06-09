@@ -14,6 +14,7 @@
   cursor: pointer;
   font-size: 0.9rem;
   background-color: var(--element-background);
+  color: var(--text-color);
 }
 
 .dropdown-content {
@@ -25,16 +26,23 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 10;
+  color: var(--text-color);
 }
 
 .dropdown-item {
   padding: 0.8rem 1.5rem;
   font-size: 0.9rem;
   cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--element-background);
 }
 
 .dropdown-item:hover {
   background-color: #f8f8f8;
+}
+
+body.dark .dropdown-item:hover {
+  background-color: #3c4e5a;
 }
 
 /* Arrow styles */
@@ -44,6 +52,10 @@
   display: inline-block;
   padding: 3px;
   margin-left: 5px;
+}
+
+body.dark .arrow {
+  border-color: #fff;
 }
 
 .arrow.down {
@@ -91,6 +103,14 @@
   padding: 0;
 }
 
+body.dark .clear-filter {
+  color: #b3b3b3;
+}
+
 .clear-filter:hover {
   color: #555;
+}
+
+body.dark .clear-filter:hover {
+  color: #fff;
 }
